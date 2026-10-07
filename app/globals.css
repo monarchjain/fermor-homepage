@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body { @apply bg-chalk text-ink font-body antialiased; }
+:focus-visible { outline: 3px solid #E8B04B; outline-offset: 3px; border-radius: 6px; }
+input[type="range"] { accent-color: #3E7C59; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
